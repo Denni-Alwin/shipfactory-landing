@@ -22,8 +22,9 @@ export function Accordion({ items = [] }) {
             <RAccordion.Header className="flex">
               <RAccordion.Trigger
                 className={cn(
-                  "group flex flex-1 cursor-pointer items-center justify-between leading-none outline-none",
-                  "text-xl text-title h-20 hover:text-muted font-normal font-display"
+                  "group flex cursor-pointer items-left justify-between leading-none outline-none",
+                  "lg:text-lg sm:text-sm text-title h-20 hover:text-muted font-normal font-display",
+                  "text-left" // Ensure text aligns to the left
                 )}
               >
                 {item.title}
