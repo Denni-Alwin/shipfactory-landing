@@ -129,7 +129,7 @@ export default function Home() {
         buttons={[
           {
             label: "Contact Support",
-            href: "https://mail.google.com/mail/?view=cm&fs=1&to=dennialwinj@gmail.com&su=Support%20Request&body=Hi%20ShipFactory%20Team,",
+            href: "https://mail.google.com/mail/?view=cm&fs=1&to=shippfactory@gmail.com&su=Support%20Request&body=Hi%20ShipFactory%20Team,",
             color: "primary",
             variant: "link",
             icon: "tabler:arrow-right",
