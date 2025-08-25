@@ -25,7 +25,7 @@ export const header = {
   buttons: [
     {
       label: "Contact",
-      href: "https://mail.google.com/mail/?view=cm&fs=1&to=dennialwinj@gmail.com&su=Support%20Request&body=Hi%20ShipFactory%20Team",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=shippfactory@gmail.com&su=Support%20Request&body=Hi%20ShipFactory%20Team",
       color: "transparent",
       size: "small",
     },
