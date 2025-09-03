@@ -1,3 +1,4 @@
+import Head from "next/head";
 import "@/styles/globals.css";
 import { Inter, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
