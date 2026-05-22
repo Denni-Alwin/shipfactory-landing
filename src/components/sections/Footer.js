@@ -1,38 +1,81 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 import { SocialLinks } from "../SocialLinks";
-import { cn } from "@/lib/utils";
 
 export function Footer({ copyright, logo, links, social, ...rest }) {
   return (
-    <footer className="bg-base-100 dark:bg-base-900 pt-6" {...rest}>
+    <footer className="bg-base-900 dark:bg-black" {...rest}>
       <div className="container px-4 mx-auto">
-        <div
-          className={cn(
-            "flex flex-col md:flex-row justify-between items-center gap-4 py-6"
-          )}
-        >
-          <img
-            src="./logo.png"
-            alt="logo"
-            className="h-10 w-auto opacity-70 hover:opacity-100 dark:invert"
-          />
-          <div className="flex flex-row gap-4 text-sm">
-            {links.map((link, index) => (
-              <Link href={link.href} key={index}>
-                {link.label}
-              </Link>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-12 border-b border-base-800">
+          <div className="flex flex-col gap-4">
+            <img
+              src="./logo.png"
+              alt="ShipFactory"
+              className="h-10 w-auto max-w-[180px] object-contain self-start invert opacity-90"
+            />
+            <p className="text-sm text-base-400 leading-relaxed max-w-xs">
+              We help retail businesses go digital with custom ecommerce
+              solutions.
+            </p>
+            <SocialLinks links={social} />
           </div>
-          <SocialLinks links={social} />
+
+          <div>
+            <h6 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+              Quick Links
+            </h6>
+            <ul className="space-y-2">
+              {links.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-base-400 hover:text-white transition-colors duration-150"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h6 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+              Contact
+            </h6>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="mailto:shippfactory@gmail.com"
+                  className="text-sm text-base-400 hover:text-white transition-colors duration-150 flex items-center gap-2"
+                >
+                  <Icon icon="tabler:mail" className="size-4 flex-shrink-0" />
+                  shippfactory@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/shipp.factory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-base-400 hover:text-white transition-colors duration-150 flex items-center gap-2"
+                >
+                  <Icon
+                    icon="tabler:brand-instagram"
+                    className="size-4 flex-shrink-0"
+                  />
+                  @shipp.factory
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
-        <div className="border-t border-base py-4 text-center flex justify-between">
-          <p className="text-sm">&copy; {copyright}</p>
-          <a href="https://bansal.io" className="text-sm text-muted italic">
-            Themed by Bansal
-          </a> 
-          <p className="text-sm">Distributed by <a href="https://themewagon.com" className="text-sm">ThemeWagon</a></p>
+
+        <div className="py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-sm text-base-500">&copy; {copyright}</p>
+          <p className="text-sm text-base-500">
+            Built for Indian retail businesses 🇮🇳
+          </p>
         </div>
       </div>
     </footer>

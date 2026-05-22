@@ -1,58 +1,58 @@
 export const testimonials = [
   {
-    name: "John Doe",
-    title: "CEO of  a Company",
-    avatar: "https://i.pravatar.cc/150?img=1",
+    name: "Rahul Sharma",
+    title: "Founder, FreshKart",
+    avatar: "https://i.pravatar.cc/150?img=11",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut",
+      "ShipFactory built our grocery delivery app from scratch in under 6 weeks. The UI is polished, the performance is excellent, and our users love it. Highly recommend them for any mobile project.",
   },
   {
-    name: "Jane Doe",
-    title: "CTO of a Company",
-    avatar: "https://i.pravatar.cc/150?img=2",
+    name: "Sneha Patel",
+    title: "CEO, LegalEase",
+    avatar: "https://i.pravatar.cc/150?img=47",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?",
+      "We needed a complex client portal built quickly. ShipFactory delivered on time, communicated clearly throughout, and the end result was beyond what we expected. Our clients use it daily with zero complaints.",
   },
   {
-    name: "John Smith",
-    title: "COO of a Company",
-    avatar: "https://i.pravatar.cc/150?img=3",
+    name: "Arjun Mehta",
+    title: "Marketing Head, UrbanNest",
+    avatar: "https://i.pravatar.cc/150?img=15",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?",
+      "Our new website went live in just 8 days. The design is clean, load times are exceptional, and leads have increased noticeably since launch. The team really understood our brand.",
   },
   {
-    name: "Jane Smith",
-    title: "CFO of a Company",
-    avatar: "https://i.pravatar.cc/150?img=4",
+    name: "Kavya Nair",
+    title: "Founder, StyleSync",
+    avatar: "https://i.pravatar.cc/150?img=49",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium",
+      "ShipFactory set up our Shopify store beautifully — custom theme, payment setup, the works. Revenue in the first month exceeded our expectations. They made the whole process stress-free.",
   },
   {
-    name: "John Doe",
-    title: "CEO of  a Company",
-    avatar: "https://i.pravatar.cc/150?img=5",
+    name: "Deepak Agarwal",
+    title: "CTO, PayTrack",
+    avatar: "https://i.pravatar.cc/150?img=68",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?",
+      "As a fintech startup we needed reliable, secure development. ShipFactory's codebase was clean, well-documented, and the API integrations worked flawlessly. A technically strong team.",
   },
   {
-    name: "Jane Doe",
-    title: "CTO of a Company",
-    avatar: "https://i.pravatar.cc/150?img=6",
+    name: "Preethi Iyer",
+    title: "Founder, LearnSphere",
+    avatar: "https://i.pravatar.cc/150?img=44",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesent necessitatibus",
+      "We launched our ed-tech platform on time and under budget. The team proactively flagged issues, suggested improvements, and genuinely cared about the outcome. That's rare.",
   },
   {
-    name: "John Smith",
-    title: "COO of a Company",
-    avatar: "https://i.pravatar.cc/150?img=7",
+    name: "Vikram Nair",
+    title: "Director, BuildRight Infra",
+    avatar: "https://i.pravatar.cc/150?img=60",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium, necessitatibus voluptatem consequuntur amet ratione? Sint distinctio quod non quae?",
+      "Our old website was costing us leads. ShipFactory redesigned and rebuilt it in two weeks — the difference is night and day. Enquiries are up 40% since we relaunched.",
   },
   {
-    name: "Jane Smith",
-    title: "CFO of a Company",
-    avatar: "https://i.pravatar.cc/150?img=8",
+    name: "Ananya Krishnan",
+    title: "Co-founder, MindfulHR",
+    avatar: "https://i.pravatar.cc/150?img=36",
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita, ipsam nobis blanditiis provident ducimus aut, velit facere fugit praesentium",
+      "ShipFactory handled our entire MVP build — design, backend, integrations. They treated it like their own product, not just a client job. We raised our seed round shortly after launch.",
   },
 ];

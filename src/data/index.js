@@ -6,3 +6,5 @@ export { pricing } from "./pricing";
 export { header } from "./header";
 export { footer } from "./footer";
 export { snipplets } from "./snipplets";
+export { process } from "./process";
+export { team } from "./team";

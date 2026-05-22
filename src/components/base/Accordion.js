@@ -22,16 +22,16 @@ export function Accordion({ items = [] }) {
             <RAccordion.Header className="flex">
               <RAccordion.Trigger
                 className={cn(
-                  "group flex cursor-pointer items-left justify-between leading-none outline-none",
+                  "group w-full flex cursor-pointer items-center justify-between leading-none outline-none",
                   "lg:text-lg sm:text-sm text-title h-20 hover:text-muted font-normal font-display",
-                  "text-left" // Ensure text aligns to the left
+                  "text-left"
                 )}
               >
                 {item.title}
                 <Icon
                   icon="tabler:chevron-down"
                   className={cn(
-                    "ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180",
+                    "ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 flex-shrink-0 ml-4",
                     "size-6"
                   )}
                   aria-hidden
@@ -43,7 +43,7 @@ export function Accordion({ items = [] }) {
                 "data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden"
               )}
             >
-              <div className="py-5">{item.body}</div>
+              <div className="py-5 text-muted leading-relaxed">{item.body}</div>
             </RAccordion.Content>
           </RAccordion.Item>
         ))}

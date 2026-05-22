@@ -1,8 +1,8 @@
 export const footer = {
-  copyright: "2024 Your Company. All rights reserved.",
+  copyright: "2025 ShipFactory. All rights reserved.",
   logo: {
     src: "./logo.png",
-    alt: "logo",
+    alt: "ShipFactory",
   },
   links: [
     {
@@ -13,23 +13,15 @@ export const footer = {
       label: "Terms of Service",
       href: "#",
     },
+    {
+      label: "Meet Our Team",
+      href: "/team",
+    },
   ],
   social: [
-    // {
-    //   icon: "tabler:brand-x",
-    //   url: "#",
-    // },
     {
       icon: "tabler:brand-instagram",
       url: "https://www.instagram.com/shipp.factory?igsh=MWc0b3gzMXBqdXZxaQ%3D%3D&utm_source=qr",
     },
-    // {
-    //   icon: "tabler:brand-youtube",
-    //   url: "#",
-    // },
-    // {
-    //   icon: "tabler:brand-linkedin",
-    //   url: "#",
-    // },
   ],
 };

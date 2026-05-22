@@ -1,5 +1,8 @@
+import { motion } from "framer-motion";
 import { SectionHeading } from "#/SectionHeading";
 import { FeatureCard } from "../cards/FeatureCard";
+
+const ease = [0.22, 1, 0.36, 1];
 
 export function FeatureSection({
   title,
@@ -17,9 +20,23 @@ export function FeatureSection({
           description={description}
           badge={badge}
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
           {features.map((feature, index) => (
-            <FeatureCard key={index} {...feature} />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{
+                delay: index * 0.08,
+                duration: 0.55,
+                ease,
+              }}
+              whileHover={{ y: -4 }}
+              className="h-full"
+            >
+              <FeatureCard {...feature} />
+            </motion.div>
           ))}
         </div>
       </div>

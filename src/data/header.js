@@ -2,24 +2,28 @@ export const header = {
   logo: {
     src: "./logo-mark.png",
     alt: "logo",
-    href: "",
+    href: "/",
   },
   links: [
     {
       label: "Features",
-      href: "#features",
+      href: "/#features",
     },
     {
       label: "Pricing",
-      href: "#pricing",
+      href: "/#pricing",
     },
     {
       label: "FAQs",
-      href: "#faqs",
+      href: "/#faqs",
     },
     {
       label: "Contact",
-      href: "#cta",
+      href: "/#cta",
+    },
+    {
+      label: "Team",
+      href: "/team",
     },
   ],
   buttons: [
