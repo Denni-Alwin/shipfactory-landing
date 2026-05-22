@@ -10,7 +10,7 @@ export function ProcessSection({ steps, ...rest }) {
         <SectionHeading
           align="center"
           title="How It Works"
-          description="From first call to a live store in just days — not months."
+          description="Four simple steps from first conversation to a live digital product you can be proud of."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-14">
           {steps.map((step, index) => (

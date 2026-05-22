@@ -96,7 +96,7 @@ export function HeroSection({
 
             {/* Title — word-by-word fade+rise
                 NOTE: no filter:blur here — child filters break background-clip:text on the parent h1 */}
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-semibold title-gradient leading-[1.1] tracking-tight overflow-visible">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold title-gradient leading-[1.1] tracking-tight overflow-visible">
               {words.map((word, i) => (
                 <motion.span
                   key={i}
@@ -140,7 +140,7 @@ export function HeroSection({
 
             {/* Stats strip */}
             {stats && stats.length > 0 && (
-              <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-6 pt-6 border-t border-base w-full max-w-2xl">
+              <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-items-center sm:justify-center gap-x-6 sm:gap-x-8 gap-y-5 mt-6 pt-6 border-t border-base w-full max-w-2xl">
                 {stats.map((stat, i) => (
                   <motion.div
                     key={i}

@@ -13,7 +13,7 @@ export function CtaSection({ title, description, buttons, ...rest }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease }}
-          className="relative overflow-hidden rounded-3xl bg-base-900 dark:bg-black px-8 py-20 text-center"
+          className="relative overflow-hidden rounded-3xl bg-base-900 dark:bg-black px-5 py-14 sm:px-8 sm:py-20 text-center"
         >
           {/* Dot grid overlay */}
           <div
@@ -55,7 +55,7 @@ export function CtaSection({ title, description, buttons, ...rest }) {
               whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               viewport={{ once: true }}
               transition={{ delay: 0.25, duration: 0.65, ease }}
-              className="text-4xl md:text-5xl font-display font-bold text-white leading-tight mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white leading-tight mb-4"
             >
               {title}
             </motion.h2>

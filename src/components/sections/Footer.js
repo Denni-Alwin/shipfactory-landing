@@ -15,8 +15,7 @@ export function Footer({ copyright, logo, links, social, ...rest }) {
               className="h-10 w-auto max-w-[180px] object-contain self-start invert opacity-90"
             />
             <p className="text-sm text-base-400 leading-relaxed max-w-xs">
-              We help retail businesses go digital with custom ecommerce
-              solutions.
+              We design and build websites, web apps, mobile apps, and ecommerce stores for businesses across India.
             </p>
             <SocialLinks links={social} />
           </div>
@@ -74,7 +73,7 @@ export function Footer({ copyright, logo, links, social, ...rest }) {
         <div className="py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-sm text-base-500">&copy; {copyright}</p>
           <p className="text-sm text-base-500">
-            Built for Indian retail businesses 🇮🇳
+            Built with ❤️ for Indian businesses 🇮🇳
           </p>
         </div>
       </div>

@@ -14,7 +14,7 @@ export function LargeFeatureSection({
   image,
 }) {
   return (
-    <section className="bg-base-100 dark:bg-base-900 py-20">
+    <section className="bg-base-100 dark:bg-base-900 py-20 overflow-hidden">
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
 

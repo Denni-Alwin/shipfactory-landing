@@ -13,7 +13,7 @@ export function FaqSection({ title, description, buttons, faqs, ...rest }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease }}
-          className="grid grid-cols-12 gap-8 lg:gap-20 bg-white dark:bg-base-900 p-8 md:p-16 rounded-3xl border border-base"
+          className="grid grid-cols-12 gap-8 lg:gap-20 bg-white dark:bg-base-900 p-5 sm:p-8 md:p-16 rounded-3xl border border-base"
         >
           <motion.div
             initial={{ opacity: 0, x: -24 }}
