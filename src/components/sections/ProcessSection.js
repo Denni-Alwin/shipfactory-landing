@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function ProcessSection({ steps, ...rest }) {
   return (
-    <section className="bg-base-50 dark:bg-base-950 py-24" {...rest}>
+    <section className="bg-base-50 dark:bg-base-950 py-24 overflow-hidden" {...rest}>
       <div className="container px-4 mx-auto">
         <SectionHeading
           align="center"

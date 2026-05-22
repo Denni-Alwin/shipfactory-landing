@@ -14,7 +14,7 @@ export function PricingSection({
 }) {
   const [tenure, setTenure] = React.useState("monthly");
   return (
-    <section className="bg-base-100 dark:bg-base-900 py-24" {...rest}>
+    <section className="bg-base-100 dark:bg-base-900 py-24 overflow-hidden" {...rest}>
       <div className="container px-4 mx-auto">
         <SectionHeading
           align="center"

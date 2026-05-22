@@ -6,7 +6,7 @@ const ease = [0.22, 1, 0.36, 1];
 
 export function FaqSection({ title, description, buttons, faqs, ...rest }) {
   return (
-    <section className="bg-base-50 dark:bg-base-950 py-24" {...rest}>
+    <section className="bg-base-50 dark:bg-base-950 py-24 overflow-hidden" {...rest}>
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -16,8 +16,8 @@ export function FaqSection({ title, description, buttons, faqs, ...rest }) {
           className="grid grid-cols-12 gap-8 lg:gap-20 bg-white dark:bg-base-900 p-5 sm:p-8 md:p-16 rounded-3xl border border-base"
         >
           <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15, duration: 0.6, ease }}
             className="col-span-12 lg:col-span-5"
@@ -30,8 +30,8 @@ export function FaqSection({ title, description, buttons, faqs, ...rest }) {
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.25, duration: 0.6, ease }}
             className="col-span-12 lg:col-span-7"
