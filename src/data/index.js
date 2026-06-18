@@ -8,3 +8,4 @@ export { footer } from "./footer";
 export { snipplets } from "./snipplets";
 export { process } from "./process";
 export { team } from "./team";
+export { projects } from "./projects";

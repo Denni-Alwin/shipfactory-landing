@@ -1,6 +1,6 @@
 export const header = {
   logo: {
-    src: "./logo-mark.png",
+    src: "/logo-mark.png",
     alt: "logo",
     href: "/",
   },
@@ -20,6 +20,10 @@ export const header = {
     {
       label: "Contact",
       href: "/#cta",
+    },
+    {
+      label: "Projects",
+      href: "/projects",
     },
     {
       label: "Team",

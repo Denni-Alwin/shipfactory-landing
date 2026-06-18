@@ -44,6 +44,7 @@ export function HeroSection({
   description,
   buttons,
   image,
+  visual,
   clientsLabel,
   clients,
   stats,
@@ -174,23 +175,32 @@ export function HeroSection({
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-16 bg-primary-300 dark:bg-primary-700 rounded-full blur-3xl pointer-events-none"
             />
-            <motion.div
-              initial={{ opacity: 0, y: 64, scale: 0.94 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ delay: 0.38, duration: 0.9, ease }}
-            >
-              {/* Floating */}
+            {visual ? (
               <motion.div
-                animate={{ y: [0, -14, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1.6 }}
+                initial={{ opacity: 0, y: 32, scale: 0.97 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ delay: 0.38, duration: 0.9, ease }}
               >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className={cn("w-full h-auto drop-shadow-2xl", image.className)}
-                />
+                {visual}
               </motion.div>
-            </motion.div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, y: 64, scale: 0.94 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ delay: 0.38, duration: 0.9, ease }}
+              >
+                <motion.div
+                  animate={{ y: [0, -14, 0] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1.6 }}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className={cn("w-full h-auto drop-shadow-2xl", image.className)}
+                  />
+                </motion.div>
+              </motion.div>
+            )}
           </div>
 
           {/* Brands */}

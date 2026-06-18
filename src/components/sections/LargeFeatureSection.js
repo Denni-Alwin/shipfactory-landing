@@ -12,6 +12,7 @@ export function LargeFeatureSection({
   description,
   list,
   image,
+  visual,
 }) {
   return (
     <section className="bg-base-100 dark:bg-base-900 py-20 overflow-hidden">
@@ -68,7 +69,7 @@ export function LargeFeatureSection({
               transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 aspect-square rounded-full bg-primary-300/50 dark:bg-primary-500/40 blur-3xl"
             />
-            <img src={image.src} alt={image.alt} className={image.className} />
+            {visual ?? <img src={image.src} alt={image.alt} className={image.className} />}
           </motion.div>
 
         </div>

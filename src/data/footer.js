@@ -1,7 +1,7 @@
 export const footer = {
   copyright: "2025 ShipFactory. All rights reserved.",
   logo: {
-    src: "./logo.png",
+    src: "/logo.png",
     alt: "ShipFactory",
   },
   links: [

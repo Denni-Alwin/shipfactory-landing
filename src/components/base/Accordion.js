@@ -22,17 +22,17 @@ export function Accordion({ items = [] }) {
             <RAccordion.Header className="flex">
               <RAccordion.Trigger
                 className={cn(
-                  "group w-full flex cursor-pointer items-center justify-between leading-none outline-none",
-                  "lg:text-lg sm:text-sm text-title h-20 hover:text-muted font-normal font-display",
+                  "group w-full flex cursor-pointer items-center justify-between gap-3 sm:gap-4 leading-snug outline-none",
+                  "text-base lg:text-lg text-title min-h-20 py-5 hover:text-muted font-normal font-display",
                   "text-left"
                 )}
               >
-                {item.title}
+                <span className="flex-1">{item.title}</span>
                 <Icon
                   icon="tabler:chevron-down"
                   className={cn(
-                    "ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 flex-shrink-0 ml-4",
-                    "size-6"
+                    "ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 group-data-[state=open]:rotate-180 flex-shrink-0",
+                    "size-5 sm:size-6"
                   )}
                   aria-hidden
                 />
