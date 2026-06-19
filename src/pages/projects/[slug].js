@@ -359,8 +359,11 @@ export default function ProjectDetail({ project, next }) {
                   Next project
                 </p>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="flex items-center justify-center size-11 rounded-xl bg-base-950 text-primary-400">
-                    <Icon icon={next.icon} className="size-6" />
+                  <span className="flex items-center justify-center size-11 rounded-xl bg-base-950 text-primary-400 overflow-hidden p-1.5">
+                    {next.logo
+                      ? <img src={next.logo} alt={next.title} className="w-full h-full object-contain" />
+                      : <Icon icon={next.icon} className="size-6" />
+                    }
                   </span>
                   <div>
                     <h3 className="text-lg font-display font-bold text-title leading-tight">

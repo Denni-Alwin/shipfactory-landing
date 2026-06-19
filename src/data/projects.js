@@ -4,6 +4,7 @@ export const projects = [
     title: "Lumen Analytics",
     category: "Web Development",
     icon: "tabler:chart-dots-3",
+    logo: "/logos/lumen.svg",
     summary:
       "A real-time SaaS dashboard that turns messy product data into clear, actionable insight — built for speed and scale.",
     tags: ["Next.js", "Node.js", "PostgreSQL", "Charts"],
@@ -48,6 +49,7 @@ export const projects = [
     title: "Saffron & Co.",
     category: "Store Creation",
     icon: "tabler:building-store",
+    logo: "/logos/saffron.svg",
     summary:
       "A premium D2C storefront for an artisanal spice brand — frictionless checkout, rich product storytelling, mobile-first.",
     tags: ["Shopify", "Headless", "Stripe", "SEO"],
@@ -91,6 +93,7 @@ export const projects = [
     title: "Kettle & Kin",
     category: "Web Development",
     icon: "tabler:device-laptop",
+    logo: "/logos/kettle-kin.svg",
     summary:
       "A booking-driven website for a boutique café chain with live table reservations and a slick, on-brand experience.",
     tags: ["React", "Tailwind", "Bookings API"],
@@ -134,6 +137,7 @@ export const projects = [
     title: "Verde Living",
     category: "Store Creation",
     icon: "tabler:shopping-bag",
+    logo: "/logos/verde.svg",
     summary:
       "A sustainable home-goods marketplace with multi-vendor support, smart search, and a checkout that just works.",
     tags: ["Next.js", "Commerce", "Algolia", "Razorpay"],

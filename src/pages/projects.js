@@ -61,14 +61,31 @@ function ProjectCard({ project, index }) {
           }}
         />
 
-        {/* Icon tile */}
-        <motion.div
-          whileHover={{ scale: 1.1, rotate: 4 }}
-          transition={{ type: "spring", stiffness: 300, damping: 18 }}
-          className={`relative z-10 size-[76px] rounded-2xl bg-gradient-to-br ${theme.icon} flex items-center justify-center text-white shadow-xl ${theme.shadow}`}
-        >
-          <Icon icon={project.icon} className="size-9" />
-        </motion.div>
+        {/* Logo or icon tile */}
+        {project.logo ? (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 + 0.2, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            whileHover={{ scale: 1.06 }}
+            className="relative z-10 flex items-center justify-center"
+          >
+            <img
+              src={project.logo}
+              alt={`${project.title} logo`}
+              className="h-11 w-auto object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.15)]"
+            />
+          </motion.div>
+        ) : (
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 4 }}
+            transition={{ type: "spring", stiffness: 300, damping: 18 }}
+            className={`relative z-10 size-[76px] rounded-2xl bg-gradient-to-br ${theme.icon} flex items-center justify-center text-white shadow-xl ${theme.shadow}`}
+          >
+            <Icon icon={project.icon} className="size-9" />
+          </motion.div>
+        )}
 
         {/* Category badge — top right */}
         <div className="absolute top-4 right-4 z-10 bg-white/5 border border-white/10 text-primary-300 text-xs font-medium px-3 py-1 rounded-full backdrop-blur-md">

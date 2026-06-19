@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 48" fill="none">
+  <!-- 6-petal flower (saffron crocus) -->
+  <g transform="translate(22,24)">
+    <ellipse cx="0" cy="-10" rx="4" ry="8" fill="white" opacity="0.9" transform="rotate(0)"/>
+    <ellipse cx="0" cy="-10" rx="4" ry="8" fill="white" opacity="0.9" transform="rotate(60)"/>
+    <ellipse cx="0" cy="-10" rx="4" ry="8" fill="white" opacity="0.9" transform="rotate(120)"/>
+    <ellipse cx="0" cy="-10" rx="4" ry="8" fill="white" opacity="0.9" transform="rotate(180)"/>
+    <ellipse cx="0" cy="-10" rx="4" ry="8" fill="white" opacity="0.9" transform="rotate(240)"/>
+    <ellipse cx="0" cy="-10" rx="4" ry="8" fill="white" opacity="0.9" transform="rotate(300)"/>
+    <!-- Centre -->
+    <circle cx="0" cy="0" r="4.5" fill="white"/>
+  </g>
+  <!-- Separator -->
+  <rect x="50" y="8" width="1" height="32" rx="0.5" fill="white" opacity="0.18"/>
+  <!-- Wordmark — two lines -->
+  <text x="60" y="22"
+    font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif"
+    font-size="14" font-weight="800" fill="white" letter-spacing="2">SAFFRON</text>
+  <text x="60" y="38"
+    font-family="system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif"
+    font-size="11" font-weight="500" fill="white" opacity="0.7" letter-spacing="3">&amp; CO.</text>
+</svg>
