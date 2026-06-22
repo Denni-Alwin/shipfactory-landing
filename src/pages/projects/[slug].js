@@ -124,6 +124,28 @@ export default function ProjectDetail({ project, next }) {
             {project.summary}
           </motion.p>
 
+          {project.links?.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.5, ease }}
+              className="flex flex-wrap gap-3 mt-6"
+            >
+              {project.links.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-primary-500/50 text-base-300 hover:text-white text-sm font-medium px-4 py-2 transition-all duration-150"
+                >
+                  <Icon icon={link.icon} className="size-4" />
+                  {link.label}
+                </a>
+              ))}
+            </motion.div>
+          )}
+
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}

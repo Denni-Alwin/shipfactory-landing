@@ -2,6 +2,7 @@ import Head from "next/head";
 import "@/styles/globals.css";
 import { Inter, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Preloader from "@/components/Preloader";
 
 const display = Syne({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="light"
+      defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
     >
@@ -39,6 +40,7 @@ export default function App({ Component, pageProps }) {
         />
         <link rel="manifest" href="./favicon/site.webmanifest" />
       </Head>
+      <Preloader />
       <main
         className={`${display.variable} ${body.variable} flex min-h-screen flex-col font-body text-base-600 dark:text-base-500 bg-base-50 dark:bg-base-950`}
       >

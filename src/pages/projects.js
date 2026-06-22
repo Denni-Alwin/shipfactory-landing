@@ -74,7 +74,7 @@ function ProjectCard({ project, index }) {
             <img
               src={project.logo}
               alt={`${project.title} logo`}
-              className="h-11 w-auto object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.15)]"
+              className="h-16 w-auto object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.15)]"
             />
           </motion.div>
         ) : (
